@@ -4,8 +4,11 @@
   "description": "church management system",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon controller"
+    "start": "node server/index.js"
   },
+  "engines": {
+	"node": "12.16.3"
+  }
   "author": "panthera technologies",
   "license": "ISC",
   "dependencies": {
