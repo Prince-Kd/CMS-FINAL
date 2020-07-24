@@ -1,0 +1,6 @@
+1. heroku login
+2. heroku create
+3. heroku addons:create mongolab:sandbox
+4. heroku config:set SECRET=GECGFCCMSSECRET
+5. yarn build, client
+6. app.use(express.static('client/build'))

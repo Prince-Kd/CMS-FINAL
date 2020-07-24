@@ -1,0 +1,32 @@
+{
+  "name": "grace_family_mngt_system",
+  "version": "1.0.0",
+  "description": "church management system",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon controller"
+  },
+  "author": "panthera technologies",
+  "license": "ISC",
+  "dependencies": {
+    "africastalking": "^0.4.5",
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "core-util-is": "^1.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.15",
+    "mongoose-unique-validator": "^2.0.3",
+    "multer": "^1.4.2",
+    "multer-gridfs-storage": "^4.1.0",
+    "nexmo": "^2.6.0",
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "sms-node": "^1.0.1",
+    "twilio": "^3.42.2",
+    "user-groups-roles": "^2.0.4"
+  }
+}
