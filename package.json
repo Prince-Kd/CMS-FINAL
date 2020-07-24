@@ -1,10 +1,14 @@
 {
-  "name": "grace_family_mngt_system",
+  "name": "church_management_system",
   "version": "1.0.0",
   "description": "church management system",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js"
+    "start": "node server/index.js",
+    "server": "nodemon server/index.js",
+    "front-end": "npm run start --prefix front-end",
+    "dev": "concurrently \"npm run server\" \"npm run front-end\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix front-end && npm run build --prefix front-end"
   },
   "engines": {
 	"node": "12.16.3"
