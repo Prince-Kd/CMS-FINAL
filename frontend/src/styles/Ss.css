@@ -1,0 +1,213 @@
+
+h2{
+    text-align: center;
+    padding: 20px ;
+
+}
+label{
+    font-weight: bold;
+}
+hr{
+    width: 30%;
+}
+.mregister{
+    margin-top: 100px;
+    background-color: white;
+    margin: 0 auto;
+    padding-left: 40px;
+    color: black;
+    font-size: 14px;
+    border: 1px solid black;
+    width: 95%;
+    height: 512px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+.box{
+    background-color: white;
+    margin: 0 auto;
+    width: 95%;
+    height: 512px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    font-size: 14px;
+}
+.cover{
+    background-color: white;
+    margin: 0 auto;
+    width: 95%;
+    height: 512px;
+    overflow-y: scroll;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    font-size: 14px;
+    padding: 10px
+}
+#mregister{
+    padding-top: 50px;
+}
+.id{
+    width:150px;
+    border-right: 1px solid black;
+    padding: 10px;
+}
+.identity{
+    width:600px;
+    border-right: 1px solid black;
+    padding: 10px;
+}
+.show{
+    display: flex;
+    margin: 10px;
+    border: 1px solid black;
+    height: 40px;
+    border-radius: 5px;
+}
+.accounts{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border: 1px solid black;
+    height: 50px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 95%
+}
+.accounts:hover{
+    border: 2px solid rgb(50, 185, 8);
+    background: rgb(153, 228, 247);
+    cursor: pointer;
+}
+
+.name{
+    margin-left: 6px;
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 6px;
+    height: 28px;
+}
+.btn4{
+    border-radius: 3px;
+    outline: 0px;
+    padding: 4px;
+    width: 100px;
+    background: gray;
+    border: none;
+    font-size: 14px;
+    text-align: center;
+    margin: 4px; 
+}
+
+.mod{
+    width: 97%;
+    height: 98%;
+    background: white;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.btn3{
+    border-radius: 3px;
+    outline: 0px;
+    padding: 4px;
+    width: 100px;
+    background: gray;
+    border: none;
+    font-size: 14px;
+    text-align: center;
+    margin: 4px;
+}
+.btn3:hover{
+    background: #095ead;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn{
+    border-radius: 3px;
+    outline: 0px;
+    padding: 6px;
+    width: 100px;
+    background: gray;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.btn2{
+    border-radius: 3px;
+    outline: 0px;
+    padding: 6px;
+    width: 100px;
+    background: gray;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px; 
+    margin-right: 10px;
+}
+#btn3{
+    width: 170px;
+}
+#btn3:hover{
+    background: green;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn2:hover{
+    background: #095ead;
+    color: #fff;
+    cursor: pointer; 
+}
+
+.btn:hover {
+    background: #095ead;
+    color: #fff;
+    cursor: pointer;
+}
+
+#del:hover{
+    background: red;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type=radio]:not(old){
+    width: 28px;
+}
+.rbutton{
+    width: 5em;
+    height: 1.5em;
+}
+.long{
+    height: 28px;
+    margin-left: 6px;
+    width: 500px;
+    padding: 6px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+.pa{
+    height: 28px;
+    margin-left: 6px;
+    width: 700px;
+    padding: 6px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+.number{
+    height: 28px;
+    margin-left: 6px;
+    padding: 6px;
+    border-radius: 3px;
+    border: 1px solid black;
+    width: 200px;
+}
+

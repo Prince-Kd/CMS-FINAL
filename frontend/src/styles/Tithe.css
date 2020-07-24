@@ -1,0 +1,70 @@
+body {
+    font-family: 'Open Sans';
+    height: 100%;
+  }
+h1{
+    text-align: center;
+}
+Table{
+    border-collapse: collapse;
+    font-size: larger;
+    table-layout: auto;
+    width: 75%;
+    height: 100%;
+    padding: 15px;
+    margin: 0 auto
+}
+Table th{
+    text-align: left;
+    background-color:#2c3e50;
+    color:white ;
+    padding: 15px;
+}
+Table td{
+    border: 1px solid #e3e3e3;
+    padding: 4px 8px;
+}
+Table tr:nth-child(odd) td{
+    background-color: #e7edf0;
+}
+
+#btn2:hover{
+    background: #095ead;
+    color: #fff;
+    cursor: pointer; 
+}
+
+#btn2{
+    border-radius: 3px;
+    outline: 0px;
+    padding: 6px;
+    width: 100px;
+    background: gray;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+}
+#date{
+    width: 150px;
+    margin: 5px;
+    text-align: center;
+    background: gray;
+    border-radius: 3px;
+}
+#date:hover{
+    background: #095ead;
+    color: #fff;
+    cursor: pointer; 
+}
+#get{
+    width: 200px;
+    margin-left: 5px;
+    text-align: center;
+    background: gray;
+    border-radius: 3px;
+}
+#get:hover{
+    background: #095ead;
+    color: #fff;
+    cursor: pointer; 
+}
