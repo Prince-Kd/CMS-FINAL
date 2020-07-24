@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(cookieParser());
 
-app.use(express.static('front-end/build'))
+app.use(express.static('frontend/build'))
 
 
 // USER ROUTES //
@@ -39,7 +39,7 @@ app.use('/', accountsRoutes);
 
 if(process.env.NODE_ENV === 'production'){
     app.get('/*', (req, res)=> {
-        res.sendFile(path.resolve(__dirname, '../front-end', 'build', 'index.html'))
+        res.sendFile(path.resolve(__dirname, '../frontend', 'build', 'index.html'))
     })
 }
 
