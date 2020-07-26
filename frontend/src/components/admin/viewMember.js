@@ -56,6 +56,8 @@ const ViewMember = () => {
                 let data3 = res3.data.message
                 setWelfare(data3)
                 setLoading(false);
+                setLoading1(false);
+                setMembers([])
             }))
             .catch(error => {
                 setLoading(false)

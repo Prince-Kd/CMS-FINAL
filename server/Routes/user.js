@@ -46,7 +46,7 @@ router.post('/api/login', async (req,res)=>{
                 }
                 //implementing method to generate token to authenticate user//
                 user.generateToken((err,user)=>{
-                    if(err) return res.status(400).send({message: err})
+                    if(err) return res.status(400).send({message: "Error"})
                     var userData = {
                         name: `${user.firstname} ${user.lastname}`,
                         username: user.username,
@@ -65,10 +65,10 @@ router.post('/api/login', async (req,res)=>{
 
 
 //route to logout user//
-router.get('/api/logout',auth, async (req,res)=>{
+router.get('/api/logout', auth, async (req,res)=>{
     try{
         req.user.deleteToken(req.token,(err,user)=>{
-            if(err) return res.status(400).send({message: err});
+            if(err) return res.status(400).send({message: "Error, Try Again"});
             res.send({message: "Logged out"})
         })
     }catch(err){

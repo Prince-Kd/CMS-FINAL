@@ -6,7 +6,7 @@ import Table from 'react-bootstrap/Table';
 import "../../styles/Ss.css";
 
 const GenerateReport = () => {
-    
+
     let titheSum = 0;
     let welfareSum = 0;
     let sum = 0;
@@ -98,13 +98,17 @@ const GenerateReport = () => {
             },
             date: report.date
         }
-        axios.post("http://localhost:5000/api/SaveReport", request)
-            .then(response => {
-                swal(response.data.message)
-            })
-            .catch(error => {
-                swal(error.response.data.message)
-            })
+        if (d.getDay() === 0) {
+            axios.post("http://localhost:5000/api/SaveReport", request)
+                .then(response => {
+                    swal(response.data.message)
+                })
+                .catch(error => {
+                    swal(error.response.data.message)
+                })
+        } else {
+            swal('Today is not a Sunday')
+        }
 
     }
     let date = d.toDateString();
@@ -125,8 +129,8 @@ const GenerateReport = () => {
                         <tr>
                             <td>TITHE</td>
                             <td>
-                                <div style={{ display: "flex"}}>
-                                    <input type="number" id="tithe" value={titheSum}   readOnly className="number" />
+                                <div style={{ display: "flex" }}>
+                                    <input type="number" id="tithe" value={titheSum} readOnly className="number" />
                                     <input type="button" value="Get Tithe and Welfare" disabled={disabled} id="get" onClick={handler} />
                                 </div>
                             </td>
@@ -136,7 +140,7 @@ const GenerateReport = () => {
 
                             <td>
                                 <div style={{ display: "flex", justifyContent: "space-between" }}>
-                                    <input type="number" id="welfare" value={welfareSum}  readOnly className="number" />
+                                    <input type="number" id="welfare" value={welfareSum} readOnly className="number" />
                                     {/* <input type="button" value="Get value" name="January" id="date" onClick={handler} /> */}
                                 </div>
                             </td>
